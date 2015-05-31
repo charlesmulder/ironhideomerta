@@ -3,6 +3,29 @@
 ---
 @charset "utf-8";
 
+$break-small = 320px;
+$break-large = 1200px;
+
+@media (max-width: $break-small) {
+    span.small {
+        display:inherit;
+    }
+
+    span.large {
+        display:none;
+    }
+}
+
+@media  (min-width: $break-small) {
+    span.small {
+        display:none;
+    }
+
+    span.large {
+        display:inherit;
+    }
+}
+
 @import
     "base"
 ;
