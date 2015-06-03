@@ -6,6 +6,10 @@
 $break-small: 320px;
 $break-large: 1200px;
 
+body {
+    overflow-wrap:break-word;
+}
+
 @media (max-width: $break-small) {
     span.small {
         display:inherit;
